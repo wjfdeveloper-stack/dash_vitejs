@@ -8,6 +8,9 @@ const BlankLayout = lazy(() => import('../layouts/blank/BlankLayout'));
 // Dashboard
 const Dashboard = lazy(() => import('../views/dashboards/Dashboard'));
 
+// Influencer Profile
+const InfluencerProfile = lazy(() => import('../views/influencer-profile/InfluencerProfilePage'));
+
 // utilities
 const Typography = lazy(() => import("../views/typography/Typography"));
 const Table = lazy(() => import("../views/tables/Table"));
@@ -30,6 +33,7 @@ const Router = [
     element: <FullLayout />,
     children: [
       { path: '/', exact: true, element: <Dashboard /> },
+      { path: '/influencer-profile', exact: true, element: <InfluencerProfile /> },
       { path: '/ui/typography', exact: true, element: <Typography /> },
       { path: '/ui/table', exact: true, element: <Table /> },
       { path: '/ui/form', exact: true, element: <Form /> },

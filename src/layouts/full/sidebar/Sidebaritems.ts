@@ -34,6 +34,13 @@ const SidebarContent: MenuItem[] = [
         url: "/",
         isPro: false,
       },
+      {
+        name: "Perfil Influencer",
+        icon: "solar:user-id-bold-duotone",
+        id: uniqueId(),
+        url: "/influencer-profile",
+        isPro: false,
+      },
     ],
   },
 ];
