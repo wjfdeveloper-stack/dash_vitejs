@@ -1,0 +1,159 @@
+/* Animações e estilos minimalistas para o perfil do influencer */
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes subtle-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Classes de utilidade para animações */
+.animate-slide-in-up {
+  animation: slide-in-up 0.4s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 2s ease-in-out infinite;
+}
+
+/* Transições suaves */
+.transition-all-300 {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-transform-300 {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-colors-300 {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeitos de hover minimalistas */
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Sombras sutis */
+.shadow-minimal {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-minimal-hover:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Espaçamentos padronizados */
+.spacing-xs { margin: 0.25rem; }
+.spacing-sm { margin: 0.5rem; }
+.spacing-md { margin: 1rem; }
+.spacing-lg { margin: 1.5rem; }
+.spacing-xl { margin: 2rem; }
+
+.spacing-x-xs { margin-left: 0.25rem; margin-right: 0.25rem; }
+.spacing-x-sm { margin-left: 0.5rem; margin-right: 0.5rem; }
+.spacing-x-md { margin-left: 1rem; margin-right: 1rem; }
+.spacing-x-lg { margin-left: 1.5rem; margin-right: 1.5rem; }
+.spacing-x-xl { margin-left: 2rem; margin-right: 2rem; }
+
+.spacing-y-xs { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+.spacing-y-sm { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+.spacing-y-md { margin-top: 1rem; margin-bottom: 1rem; }
+.spacing-y-lg { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+.spacing-y-xl { margin-top: 2rem; margin-bottom: 2rem; }
+
+/* Padding padronizado */
+.padding-xs { padding: 0.25rem; }
+.padding-sm { padding: 0.5rem; }
+.padding-md { padding: 1rem; }
+.padding-lg { padding: 1.5rem; }
+.padding-xl { padding: 2rem; }
+
+.padding-x-xs { padding-left: 0.25rem; padding-right: 0.25rem; }
+.padding-x-sm { padding-left: 0.5rem; padding-right: 0.5rem; }
+.padding-x-md { padding-left: 1rem; padding-right: 1rem; }
+.padding-x-lg { padding-left: 1.5rem; padding-right: 1.5rem; }
+.padding-x-xl { padding-left: 2rem; padding-right: 2rem; }
+
+.padding-y-xs { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.padding-y-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.padding-y-md { padding-top: 1rem; padding-bottom: 1rem; }
+.padding-y-lg { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.padding-y-xl { padding-top: 2rem; padding-bottom: 2rem; }
+
+/* Tipografia hierárquica */
+.text-hierarchy-1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.text-hierarchy-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+.text-hierarchy-3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.text-hierarchy-4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.text-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.text-small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.7;
+}
